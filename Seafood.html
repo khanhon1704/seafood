@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Thế Giới Hải Sản</title>
+  <link rel="stylesheet" href="Seafood.css" />
+  <link rel="icon" type="image/x-icon" href="Img/ico-32x32_32x32.webp" />
+  <link href="font-awesome/css/all.css" rel="stylesheet">
+</head>
+
+<body onscroll="scrollHeader()">
+  <div id="ContentToInclude"></div>
+  <div class="icon-mess" id="icon-mess" onclick="button_help()">
+    <i class="fab fa-facebook-messenger" id="bef-icon-1"></i>
+    <i class="fas fa-times" id="bef-icon-2"></i>
+  </div>
+  <div class="wonder" id="wonder">
+    <div class="row-wonder-top">
+      <div class="chat">Chat With us</div>
+      <div class="hello">👋 Xin chào! Bạn vui lòng nhập câu hỏi hoặc gợi ý sản
+        phẩm bạn đang mong muốn tìm kiếm. Lethnic rất sẵn sàng hỗ trợ bạn!
+      </div>
+    </div>
+    <div class="row-wonder-between">
+      <textarea placeholder="Write message" rows="6" maxlength="350"></textarea>
+      <i class="fas fa-paper-plane"></i>
+    </div>
+    <div class="row-wonder-bottom">
+      <div class="question">Instant answers</div>
+      <div class="Instant">
+        <div class="common-instant">
+          <div class="col-instant">Tôi muốn kiểm tra đơn hàng?</div>
+          <i class="fas fa-paper-plane"></i>
+        </div>
+        <div class="common-instant">
+          <div class="col-instant">Tôi muốn hỏi về thời gian giao hàng?</div>
+          <i class="fas fa-paper-plane"></i>
+        </div>
+        <div class="common-instant">
+          <div class="col-instant">Tôi muốn hỏi về dịch vụ Khắc Tên / Gói Quà?</div>
+          <i class="fas fa-paper-plane"></i>
+        </div>
+        <div class="common-instant">
+          <div class="col-instant">Track my order</div>
+          <i class="fas fa-paper-plane"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row-promotion" id="row-promotion">
+    <div class="common-col-promotion">
+      Freeship cho đơn hàng từ 1 triệu đồng
+    </div>
+    <div class="common-col-promotion col-x" onclick="button_promotion()">x</div>
+  </div>
+  <div class="row-header" id="row-header">
+    <div class="col-1-header">
+      <img src="Img/logo.png" alt="" class="logo">
+    </div>
+    <div class="col-2-menu-header">
+      <ul>
+        <li>
+          <div class="parent-sup-menu">Tôm</div>
+        </li>
+        <li>
+          <div class="parent-sup-menu">Cua-ghẹ</div>
+        </li>
+        <li>
+          <div class="parent-sup-menu">Shashimi</div>
+        </li>
+        <li>
+          <div class="parent-sup-menu">Bàu ngư-Hàu</div>
+        </li>
+        <li>
+          <div class="parent-sup-menu pos-icon">
+            Bán chạy nhất
+            <div class="icon-hot">hot
+              <div class="arrow-right"></div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="parent-sup-menu">Cá</div>
+        </li>
+        <li>
+          <div class="parent-sup-menu">Bạch tuột-Mực</div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-3-header">
+      <div class="accounts">
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="accounts">
+        <i class="far fa-user"></i>
+      </div>
+      <div class="accounts">
+        <i class="fas fa-cart-plus"></i>
+      </div>
+    </div>
+  </div>
+  <div class="row-content">
+    <div class="content-1" id="change_img">
+      <div class="button-arrow">
+        <div class="parent-button-arrow" onclick="button_left_content_1()">
+          <i class="arrow left"></i>
+        </div>
+        <div class="check">
+          <label class="container">
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark check1" id="button1_Cont1"></span>
+          </label>
+          <label class="container">
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark check2" id="button2_Cont1"></span>
+          </label>
+        </div>
+        <div class="parent-button-arrow pos-right" onclick="button_right_content_1()">
+          <i class="arrow right"></i>
+        </div>
+      </div>
+    </div>
+    <div class="content-2">
+      <div class="common-col-content2" style="border: none;">
+        <div class="common-img">
+          <img src="Img/xe chở.png">
+        </div>
+        <div class="common-text-content2">
+          <div class="common-text-1-content2">
+            Free Shipping</div>
+          <div class="common-text-2-content2">Hoá đơn từ 1 triệu đồng</div>
+        </div>
+      </div>
+      <div class="common-col-content2">
+      </div>
+      <div class="common-col-content2">
+        <div class="common-img">
+          <img src="Img/khoá.png">
+        </div>
+        <div class="common-text-content2">
+          <div class="common-text-1-content2">Thanh toán</div>
+          <div class="common-text-2-content2">Kiểm tra sản phẩm trước khi
+            thanh toán</div>
+        </div>
+      </div>
+    </div>
+    <div class="content-3">
+      <div class="header-content">
+        <div class="text-1-content">Sản Phẩm Vừa Lên Kệ</div>
+        <div class="text-2-content">Những sản phẩm mới được giới thiệu từ
+          Thế Giới Hải Sản</div>
+      </div>
+      <div class="parent-content-3">
+        <div class="button-arrow-content-3 arrow-left-content3">
+          <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="common-img-content3">
+          <div class="common-col-content">
+            <div class="img1-content3 common-img-content"></div>
+            <div class="introduce-wallet" style="border: none;">
+              <div class="text-introduce-seafood">Sò Lông Tươi Sống</div>
+              <div class="price">520.000 ₫</div>
+              <div class="rating">
+                <span>☆</span>
+                <span>☆</span>
+                <span>☆</span>
+                <span>☆</span>
+                <span>☆</span>
+              </div>
+            </div>
+            <div class="common-icon-shopping">
+              <div class="sss">
+                <div class="common-style-icon">
+                  <i class="fas fa-cart-plus"></i>
+                </div>
+                <div class="common-style-icon">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="common-col-content">
+            <div class="img2-content3 common-img-content"></div>
+            <div class="introduce-wallet">
+              <div class="text-introduce-seafood">Ốc Gai</div>
+              <div class="price">349.000 ₫</div>
+              <div class="star">
+                <div class="rating1">
+                  <span>☆</span>
+                  <span>☆</span>
+                  <span>☆</span>
+                  <span>☆</span>
+                  <span>☆</span>
+                </div>
+              </div>
+            </div>
+            <div class="common-icon-shopping">
+              <div class="sss">
+                <div class="common-style-icon">
+                  <i class="fas fa-cart-plus"></i>
+                </div>
+                <div class="common-style-icon">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="common-col-content">
+            <div class="img3-content3 common-img-content"></div>
+            <div class="introduce-wallet">
+              <div class="text-introduce-seafood">Ốc Đỏ</div>
+              <div class="price">520.000 ₫</div>
+              <div class="star">
+                <div class="rating">
+                  <span>☆</span>
+                  <span>☆</span>
+                  <span>☆</span>
+                  <span>☆</span>
+                  <span>☆</span>
+                </div>
+              </div>
+            </div>
+            <div class="common-icon-shopping">
+              <div class="sss">
+                <div class="common-style-icon">
+                  <i class="fas fa-cart-plus"></i>
+                </div>
+                <div class="common-style-icon">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="common-col-content">
+            <div class="img4-content3 common-img-content"></div>
+            <div class="introduce-wallet">
+              <div class="text-introduce-seafood">Nghêu Ngọc</div>
+              <div class="price">580.000 ₫</div>
+              <div class="star">
+                <div class="rating1">
+                  <span>☆</span>
+                  <span>☆</span>
+                  <span>☆</span>
+                  <span>☆</span>
+                  <span>☆</span>
+                </div>
+              </div>
+              <div class="img-small-content-3">
+                <div class="common-row-img-small-content">
+                  <div class="common-products-pos-content">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="common-icon-shopping">
+              <div class="sss">
+                <div class="common-style-icon">
+                  <i class="fas fa-cart-plus"></i>
+                </div>
+                <div class="common-style-icon">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button-arrow-content-3 arrow-right-content3">
+          <i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+    <div class="content-4 content-3">
+      <div class="header-content">
+        <div class="text-1-content">Best Seller</div>
+        <div class="text-2-content">Những sản phẩm bán nhiều nhất trong 30
+          ngàg qua.</div>
+      </div>
+      <div class="parent-content-4">
+        <div class="common-img-content3">
+          <div class="common-col-content">
+            <div class="img1-content4 common-img-content"></div>
+            <div class="introduce-wallet" style="border: none;">
+              <div class="text-introduce-seafood">Bào Ngư Hàn Quốc</div>
+              <div class="price">650.000 ₫</div>
+              <div class="rating1">
+                <span>☆</span>
+                <span>☆</span>
+                <span>☆</span>
+                <span>☆</span>
+                <span>☆</span>
+              </div>
+            </div>
+            <div class="common-icon-shopping">
+              <div class="sss">
+                <div class="common-style-icon">
+                  <i class="fas fa-cart-plus"></i>
+                </div>
+                <div class="common-style-icon">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="common-col-content">
+            <div class="img2-content4 common-img-content"></div>
+            <div class="introduce-wallet">
+              <div class="text-introduce-seafood">Hàu Vàng Giống Nhật</div>
+              <div class="price">420.000 ₫</div>
+              <div class="star">
+                <div class="rating1">
+                  <span>☆</span>
+                  <span>☆</span>
+                  <span>☆</span>
+                  <span>☆</span>
+                  <span>☆</span>
+                </div>
+              </div>
+            </div>
+            <div class="common-icon-shopping">
+              <div class="sss">
+                <div class="common-style-icon">
+                  <i class="fas fa-cart-plus"></i>
+                </div>
+                <div class="common-style-icon">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="common-col-content">
+            <div class="img3-content4 common-img-content"></div>
+            <div class="introduce-wallet">
+              <div class="text-introduce-seafood">Hàu Canada</div>
+              <div class="price">550.000 ₫</div>
+              <div class="star">
+                <div class="rating1">
+                  <span>☆</span>
+                  <span>☆</span>
+                  <span>☆</span>
+                  <span>☆</span>
+                  <span>☆</span>
+                </div>
+              </div>
+            </div>
+            <div class="common-icon-shopping">
+              <div class="sss">
+                <div class="common-style-icon">
+                  <i class="fas fa-cart-plus"></i>
+                </div>
+                <div class="common-style-icon">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="common-col-content">
+            <div class="img4-content4 common-img-content"></div>
+            <div class="introduce-wallet">
+              <div class="text-introduce-seafood">Hàu Giống Pháp Tươi Sống</div>
+              <div class="price">490.000 ₫</div>
+              <div class="star">
+                <div class="rating1">
+                  <span>☆</span>
+                  <span>☆</span>
+                  <span>☆</span>
+                  <span>☆</span>
+                  <span>☆</span>
+                </div>
+              </div>
+            </div>
+            <div class="common-icon-shopping">
+              <div class="sss">
+                <div class="common-style-icon">
+                  <i class="fas fa-cart-plus"></i>
+                </div>
+                <div class="common-style-icon">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-5">
+      <div class="header-content">
+        <div class="text-1-content">Thế Giới Hải Sản có gì?</div>
+        <div class="text-2-content">Cùng khám phá những dòng sản phẩm độc
+          đáo từ Thế Giới Hải Sản</div>
+      </div>
+      <div class="parent-content-5">
+        <div class="col-left-contenn5 common-cur-content5">
+          <img src="Img/know4.png">
+        </div>
+        <div class="col-right-content5">
+          <div class="common-small-img-content5">
+            <img src="Img/know5.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-6">
+      <div class="header-content">
+        <div class="text-1-content">Có thể bạn chưa biết</div>
+        <div class="text-2-content">Những chia sẻ thú vị và thông tin hữu
+          ích</div>
+      </div>
+      <div class="parent-content6">
+        <div class="common-knowledge-content6">
+          <div class="common-img-content6 img1-content6"></div>
+          <div class="common-intension-content6">Khám phá thủy cung cùng nghệ sĩ Việt</div>
+          <div class="time">March 31, 2022</div>
+        </div>
+        <div class="common-knowledge-content6">
+          <div class="common-img-content6 img2-content6"></div>
+          <div class="common-intension-content6">Gọi tên chim nhưng lại là cá- món ngon vùng biển Việt không thể bỏ qua</div>
+          <div class="time">March 22, 2022</div>
+        </div>
+        <div class="common-knowledge-content6">
+          <div class="common-img-content6 img3-content6"></div>
+          <div class="common-intension-content6">Lợi và bất lợi khi chọn mua hải sản online</div>
+          <div class="time">March 21, 2022</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row-footer">
+    <div class="parent-footer">
+      <div class="common-footer">
+        <div class="common-present-footer">Liên Hệ</div>
+        <div class="common-col-footer">
+
+          <div class="text-footer">
+            <div class="common-text-footer">Chi nhánh 1 : 499, Nguyễn Đình
+              Chiểu, Phường 2, Quận 3.</div>
+            <div class="common-text-footer">Chi nhánh 2 : 267/1A, Nguyễn Văn
+              Đậu, Phường 11, Bình Thạnh.( Chưa đón khách )</div>
+            <div class="common-text-footer">Chi nhánh 3 : 39, Huỳnh Văn
+              Bánh, Phường 17, Phú Nhuận</div>
+            <div class="common-text-footer">Chi nhánh 4 : 119 , Quang Trung,
+              Phường 10, Gò Vấp ( Mới khai trương )</div>
+            <div class="common-text-footer">Chi nhánh 5 : 07, Phan Chu
+              Trinh, Quảng Ngãi.</div>
+            <div class="common-text-footer pointer">fb.com/thegioihaisan</div>
+            <div class="common-text-footer pointer">info@thegioihaisan.vn</div>
+          </div>
+        </div>
+      </div>
+      <div class="common-footer">
+        <div class="common-present-footer">Hữu Ích</div>
+        <div class="common-col-footer">
+          <div class="common-text-footer pointer">Giới thiệu</div>
+          <div class="common-text-footer pointer">Khuyến mãi</div>
+          <div class="common-text-footer pointer">Điều khoản dịch vụ</div>
+          <div class="common-text-footer pointer">Liên hệ</div>
+          <div class="common-text-footer pointer">Tra Cứu Đơn Hàng</div>
+        </div>
+      </div>
+      <div class="common-footer">
+        <div class="common-present-footer">Danh mục</div>
+        <div class="common-col-footer">
+          <div class="common-text-footer pointer">Sự kiện hoàng gia</div>
+          <div class="common-text-footer pointer">Góc ẩm thực</div>
+          <div class="common-text-footer pointer">Sản phẩm</div>
+          <div class="common-text-footer pointer">Blog</div>
+          <div class="common-text-footer pointer">Tuyển Dụng</div>
+        </div>
+      </div>
+      <div class="common-footer">
+        <div class="common-present-footer">Kết Nối</div>
+        <div class="common-col-footer">
+          <div class="common-text-footer pointer">Facebook</div>
+          <div class="common-text-footer pointer">Instagram</div>
+          <div class="common-text-footer pointer">YouTube</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="jquery.js"></script>
+<script src="Seafood.js"></script>
+
+</html>
